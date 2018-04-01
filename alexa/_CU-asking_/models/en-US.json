@@ -1,0 +1,71 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "problem solved",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hello",
+            "say hello",
+            "say hello world"
+          ]
+        },
+        {
+          "name": "MyNameIsIntent",
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.US_FIRST_NAME"
+            }
+          ],
+          "samples": [
+            "my name is {name}",
+            "i am {name}",
+            "you can call me {name}"
+          ]
+        },
+        {
+          "name": "SignInIntent",
+          "slots": [
+            {
+              "name": "username",
+              "type": "AMAZON.US_FIRST_NAME"
+            }
+          ],
+          "samples": [
+            "help me sign in",
+            "sign me in",
+            "sign in",
+            "sign in into my account with username {username}",
+            "sign in with account name {username}"
+          ]
+        },
+        {
+          "name": "PostQuestionIntent",
+          "slots": [
+            {
+              "name": "Question",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "post {Question}"
+          ]
+        }
+      ]
+    }
+  }
+}
